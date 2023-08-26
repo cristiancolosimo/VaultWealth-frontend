@@ -12,3 +12,22 @@
 body{
   @apply bg-slate-200;
 }
+
+.page-grid{
+  display: grid;
+  grid-template-areas: "header header" "sidebar main";
+  grid-template-columns: 190px 1fr;
+}
+
+.page-grid-header{
+  grid-area: header;
+}
+
+.page-grid-sidebar{
+  grid-area: sidebar;
+}
+
+.page-grid-main{
+  grid-area: main;
+  width: 100%;
+}
